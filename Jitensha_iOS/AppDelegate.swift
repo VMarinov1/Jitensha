@@ -14,12 +14,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    // MARK: Actions 
+    
+    /*!
+     * @discussion Show Login form
+     */
+    func showLogin() -> () {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("Login") as UIViewController
+        self.window!.rootViewController = initViewController
+    }
+    /*!
+     * @discussion Show Main form
+     */
+    func showMainForm() -> () {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("MainForm") as UIViewController
+        UIView.transitionWithView(self.window!, duration:0.5,  options: UIViewAnimationOptions.TransitionFlipFromBottom,
+            animations:{
+                self.window!.rootViewController = initViewController
+                
+            },completion:nil);
     }
 
+
+    // MARK:
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        if UserService.sharedInstance.isLoggedIn() == true
+        {
+            self.showMainForm();
+        }
+        else
+        {
+            self.showLogin();
+        }
+        return true
+    }
+    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -92,7 +124,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         if managedObjectContext.hasChanges {
             do {
