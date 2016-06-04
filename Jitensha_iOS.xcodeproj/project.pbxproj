@@ -23,6 +23,8 @@
 		22ECB5421D02FA24009C1774 /* PlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5411D02FA24009C1774 /* PlacesListViewController.swift */; };
 		22ECB5441D02FAD6009C1774 /* MapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5431D02FAD6009C1774 /* MapListViewController.swift */; };
 		22ECB5461D02FB41009C1774 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5451D02FB41009C1774 /* RentViewController.swift */; };
+		22ECB5481D031A97009C1774 /* PlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5471D031A97009C1774 /* PlacesService.swift */; };
+		22ECB54A1D03200D009C1774 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5491D03200D009C1774 /* PlaceModel.swift */; };
 		6C7178673C2B1BFDBE997573 /* Pods_Jitensha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC015006721AF270E57A47C /* Pods_Jitensha_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		22ECB5411D02FA24009C1774 /* PlacesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesListViewController.swift; sourceTree = "<group>"; };
 		22ECB5431D02FAD6009C1774 /* MapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapListViewController.swift; sourceTree = "<group>"; };
 		22ECB5451D02FB41009C1774 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
+		22ECB5471D031A97009C1774 /* PlacesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesService.swift; sourceTree = "<group>"; };
+		22ECB5491D03200D009C1774 /* PlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		334C28DFD49CC2CD5FB5DE8F /* Pods-Jitensha_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jitensha_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jitensha_iOS/Pods-Jitensha_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		F066DA6B32D8A52E63160BCA /* Pods-Jitensha_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jitensha_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jitensha_iOS/Pods-Jitensha_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				22ECB5361D02E2AE009C1774 /* UserModel.swift */,
+				22ECB5491D03200D009C1774 /* PlaceModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			children = (
 				22ECB5391D02E44F009C1774 /* AuthService.swift */,
 				22ECB53B1D02E54F009C1774 /* UserService.swift */,
+				22ECB5471D031A97009C1774 /* PlacesService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -401,6 +407,8 @@
 				22ECB5371D02E2AE009C1774 /* UserModel.swift in Sources */,
 				22ECB50A1D02CF2E009C1774 /* Jitensha_iOS.xcdatamodeld in Sources */,
 				22ECB53C1D02E54F009C1774 /* UserService.swift in Sources */,
+				22ECB54A1D03200D009C1774 /* PlaceModel.swift in Sources */,
+				22ECB5481D031A97009C1774 /* PlacesService.swift in Sources */,
 				22ECB5401D02F735009C1774 /* RegisterViewController.swift in Sources */,
 				22ECB5421D02FA24009C1774 /* PlacesListViewController.swift in Sources */,
 				22ECB5461D02FB41009C1774 /* RentViewController.swift in Sources */,
