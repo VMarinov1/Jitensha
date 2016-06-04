@@ -26,6 +26,9 @@ class RegisterViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    /*!
+     * @discussion Called when Register button pressed
+     */
     @IBAction func register(sender: AnyObject) {
         let username = self.loginTextField.text
         let password = self.passwordTextField.text
@@ -33,7 +36,7 @@ class RegisterViewController: UIViewController {
             if ((error) != nil) {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let alert = UIAlertController(title: Constants.errorTitleResponse, message: error, preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+                    alert.addAction(UIAlertAction(title: Constants.dismissButtonLabel, style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
                 })
             } else {

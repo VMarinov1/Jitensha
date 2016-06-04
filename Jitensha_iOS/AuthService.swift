@@ -55,10 +55,13 @@ public class AuthService : NSObject {
                     let post = JSON(value)
                     if post[Constants.accessTokenKeyString].string != nil {
                         let accessToken = post[Constants.accessTokenKeyString].string;
-                        UserService.sharedInstance.loginUser(UserModel(username: username, password: password, token: accessToken));
+                        UserService.sharedInstance.loginUser(UserModel(username: username, token: accessToken));
                         completionHandler(error: nil);
                     } else if post[Constants.messageKeyString].string != nil {
                         completionHandler(error: post[Constants.messageKeyString].string );
+                    }
+                    else if let _: AnyObject = response.result.error {
+                        completionHandler(error:response.result.description);
                     }
                 }
                 else if let _: AnyObject = response.result.error {
@@ -91,7 +94,7 @@ public class AuthService : NSObject {
                     let post = JSON(value)
                     if post[Constants.accessTokenKeyString].string != nil {
                         let accessToken = post[Constants.accessTokenKeyString].string;
-                        UserService.sharedInstance.loginUser(UserModel(username: username, password: password, token: accessToken));
+                        UserService.sharedInstance.loginUser(UserModel(username: username, token: accessToken));
                         completionHandler(error: nil);
                     } else if post[Constants.messageKeyString].string != nil {
                         completionHandler(error: post[Constants.messageKeyString].string );

@@ -11,8 +11,8 @@ import Foundation
 
 public class UserService : NSObject {
     
-    private var userInfo : UserModel!
-    
+    public private(set) var userInfo : UserModel
+
     // MARK: Singleton Support
     class var sharedInstance : UserService {
         
@@ -20,13 +20,11 @@ public class UserService : NSObject {
             static let instance = UserService()
         }
         
-        if Singleton.instance.userInfo == nil {
-            // Initialize new userInfo object
-            Singleton.instance.userInfo = UserModel(username: Constants.emptyString, password: Constants.emptyString, token: Constants.emptyString )
-        }
+       
         return Singleton.instance
     }
     override init() {
+        self.userInfo = UserModel(username: Constants.emptyString, token: Constants.emptyString )
         super.init()
         dispatch_after(
             dispatch_time(
@@ -50,10 +48,7 @@ public class UserService : NSObject {
      * @return YES if user is logged in
      */
     public func isLoggedIn() -> Bool {
-        if let info = UserService.sharedInstance.userInfo {
-            return info.token != (Constants.emptyString);
-        }
-        return false;
+        return self.userInfo.token != (Constants.emptyString);
     }
 
 }

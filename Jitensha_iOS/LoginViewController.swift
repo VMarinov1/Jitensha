@@ -29,10 +29,15 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: IBActions
+    /*!
+     * @discussion Called when Register button pressed
+     */
     @IBAction func register(sender: AnyObject) {
-        self .performSegueWithIdentifier(Constants.kShowRegisterSegueId, sender: self);
+        self.performSegueWithIdentifier(Constants.kShowRegisterSegueId, sender: self);
     }
-    
+    /*!
+     * @discussion Called when Login button pressed
+     */
     @IBAction func login(sender: AnyObject) {
         let username = self.loginTextField.text
         let password = self.passwordTextField.text
@@ -40,7 +45,7 @@ class LoginViewController: UIViewController {
             if ((error) != nil) {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let alert = UIAlertController(title: Constants.errorTitleResponse, message: error, preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+                    alert.addAction(UIAlertAction(title: Constants.dismissButtonLabel, style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
                 })
             } else {

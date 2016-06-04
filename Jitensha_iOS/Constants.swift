@@ -22,10 +22,18 @@ public struct Constants{
     static let passworKeyString = "password"
     static let accessTokenKeyString = "accessToken"
     static let messageKeyString = "message"
+    static let resultsKeyString = "results"
+    static let authorizationResults = "Authorization"
+    static let MetersCutOff = 1000.0
     // Messages 
     static let invalidResponse = "Invalid Respose"
     static let errorTitleResponse = "Error"
     static let loginSuccessResponse = "Welcome"
+    // Buttons 
+    static let dismissButtonLabel = "Dismiss"
     // segues
     static let kShowRegisterSegueId = "ShowRegisterSegue"
+    static let kShowMapSegueId = "ShowMapSegue"
+    static let kShowRentPlaceSegueId = "ShowRentPlaceSegue"
+    static let kShowRentHistorySegueId = "ShowRentHistorySegue"
 }

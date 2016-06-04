@@ -10,6 +10,5 @@ import Foundation
 
 public struct UserModel {
     let username: String!
-    let password: String!
     let token: String!
 }
