@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		22ECB5021D02CF2E009C1774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5011D02CF2E009C1774 /* AppDelegate.swift */; };
-		22ECB5041D02CF2E009C1774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5031D02CF2E009C1774 /* ViewController.swift */; };
+		22ECB5041D02CF2E009C1774 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5031D02CF2E009C1774 /* LoginViewController.swift */; };
 		22ECB5071D02CF2E009C1774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB5051D02CF2E009C1774 /* Main.storyboard */; };
 		22ECB50A1D02CF2E009C1774 /* Jitensha_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5081D02CF2E009C1774 /* Jitensha_iOS.xcdatamodeld */; };
 		22ECB50C1D02CF2E009C1774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB50B1D02CF2E009C1774 /* Assets.xcassets */; };
 		22ECB50F1D02CF2E009C1774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB50D1D02CF2E009C1774 /* LaunchScreen.storyboard */; };
 		22ECB51A1D02CF2E009C1774 /* Jitensha_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5191D02CF2E009C1774 /* Jitensha_iOSTests.swift */; };
 		22ECB5251D02CF2E009C1774 /* Jitensha_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5241D02CF2E009C1774 /* Jitensha_iOSUITests.swift */; };
+		22ECB5371D02E2AE009C1774 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5361D02E2AE009C1774 /* UserModel.swift */; };
+		22ECB53A1D02E44F009C1774 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5391D02E44F009C1774 /* AuthService.swift */; };
+		22ECB53C1D02E54F009C1774 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB53B1D02E54F009C1774 /* UserService.swift */; };
+		22ECB53E1D02E66B009C1774 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB53D1D02E66B009C1774 /* Constants.swift */; };
+		22ECB5401D02F735009C1774 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB53F1D02F735009C1774 /* RegisterViewController.swift */; };
+		22ECB5421D02FA24009C1774 /* PlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5411D02FA24009C1774 /* PlacesListViewController.swift */; };
+		22ECB5441D02FAD6009C1774 /* MapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5431D02FAD6009C1774 /* MapListViewController.swift */; };
+		22ECB5461D02FB41009C1774 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5451D02FB41009C1774 /* RentViewController.swift */; };
+		6C7178673C2B1BFDBE997573 /* Pods_Jitensha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC015006721AF270E57A47C /* Pods_Jitensha_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FC015006721AF270E57A47C /* Pods_Jitensha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jitensha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22ECB4FE1D02CF2E009C1774 /* Jitensha_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jitensha_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22ECB5011D02CF2E009C1774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22ECB5031D02CF2E009C1774 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22ECB5031D02CF2E009C1774 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		22ECB5061D02CF2E009C1774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22ECB5091D02CF2E009C1774 /* Jitensha_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jitensha_iOS.xcdatamodel; sourceTree = "<group>"; };
 		22ECB50B1D02CF2E009C1774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		22ECB5201D02CF2E009C1774 /* Jitensha_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jitensha_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22ECB5241D02CF2E009C1774 /* Jitensha_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jitensha_iOSUITests.swift; sourceTree = "<group>"; };
 		22ECB5261D02CF2E009C1774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22ECB5361D02E2AE009C1774 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		22ECB5391D02E44F009C1774 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		22ECB53B1D02E54F009C1774 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		22ECB53D1D02E66B009C1774 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22ECB53F1D02F735009C1774 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		22ECB5411D02FA24009C1774 /* PlacesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesListViewController.swift; sourceTree = "<group>"; };
+		22ECB5431D02FAD6009C1774 /* MapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapListViewController.swift; sourceTree = "<group>"; };
+		22ECB5451D02FB41009C1774 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
+		334C28DFD49CC2CD5FB5DE8F /* Pods-Jitensha_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jitensha_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jitensha_iOS/Pods-Jitensha_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F066DA6B32D8A52E63160BCA /* Pods-Jitensha_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jitensha_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jitensha_iOS/Pods-Jitensha_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7178673C2B1BFDBE997573 /* Pods_Jitensha_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035369B0324287AC587C4088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FC015006721AF270E57A47C /* Pods_Jitensha_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22ECB4F51D02CF2E009C1774 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				22ECB5181D02CF2E009C1774 /* Jitensha_iOSTests */,
 				22ECB5231D02CF2E009C1774 /* Jitensha_iOSUITests */,
 				22ECB4FF1D02CF2E009C1774 /* Products */,
+				949111F92B1F1F5427BE3732 /* Pods */,
+				035369B0324287AC587C4088 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +130,13 @@
 		22ECB5001D02CF2E009C1774 /* Jitensha_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				22ECB5381D02E41A009C1774 /* Services */,
+				22ECB5351D02DFAA009C1774 /* Database */,
+				22ECB5341D02DFA4009C1774 /* Models */,
+				22ECB5331D02DF89009C1774 /* Assets */,
+				22ECB5321D02DF76009C1774 /* Controllers */,
 				22ECB5011D02CF2E009C1774 /* AppDelegate.swift */,
-				22ECB5031D02CF2E009C1774 /* ViewController.swift */,
-				22ECB5051D02CF2E009C1774 /* Main.storyboard */,
-				22ECB50B1D02CF2E009C1774 /* Assets.xcassets */,
-				22ECB50D1D02CF2E009C1774 /* LaunchScreen.storyboard */,
-				22ECB5101D02CF2E009C1774 /* Info.plist */,
-				22ECB5081D02CF2E009C1774 /* Jitensha_iOS.xcdatamodeld */,
+				22ECB53D1D02E66B009C1774 /* Constants.swift */,
 			);
 			path = Jitensha_iOS;
 			sourceTree = "<group>";
@@ -128,6 +159,63 @@
 			path = Jitensha_iOSUITests;
 			sourceTree = "<group>";
 		};
+		22ECB5321D02DF76009C1774 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22ECB5031D02CF2E009C1774 /* LoginViewController.swift */,
+				22ECB53F1D02F735009C1774 /* RegisterViewController.swift */,
+				22ECB5411D02FA24009C1774 /* PlacesListViewController.swift */,
+				22ECB5431D02FAD6009C1774 /* MapListViewController.swift */,
+				22ECB5451D02FB41009C1774 /* RentViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		22ECB5331D02DF89009C1774 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				22ECB5101D02CF2E009C1774 /* Info.plist */,
+				22ECB5051D02CF2E009C1774 /* Main.storyboard */,
+				22ECB50B1D02CF2E009C1774 /* Assets.xcassets */,
+				22ECB50D1D02CF2E009C1774 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		22ECB5341D02DFA4009C1774 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22ECB5361D02E2AE009C1774 /* UserModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		22ECB5351D02DFAA009C1774 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				22ECB5081D02CF2E009C1774 /* Jitensha_iOS.xcdatamodeld */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		22ECB5381D02E41A009C1774 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22ECB5391D02E44F009C1774 /* AuthService.swift */,
+				22ECB53B1D02E54F009C1774 /* UserService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		949111F92B1F1F5427BE3732 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F066DA6B32D8A52E63160BCA /* Pods-Jitensha_iOS.debug.xcconfig */,
+				334C28DFD49CC2CD5FB5DE8F /* Pods-Jitensha_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22ECB5291D02CF2E009C1774 /* Build configuration list for PBXNativeTarget "Jitensha_iOS" */;
 			buildPhases = (
+				2C1579891BCA46A9D5062851 /* Check Pods Manifest.lock */,
 				22ECB4FA1D02CF2E009C1774 /* Sources */,
 				22ECB4FB1D02CF2E009C1774 /* Frameworks */,
 				22ECB4FC1D02CF2E009C1774 /* Resources */,
+				0E99953E0E64D091393E52D8 /* Embed Pods Frameworks */,
+				70783FBDD3C4E6E692EAFD32 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +345,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E99953E0E64D091393E52D8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jitensha_iOS/Pods-Jitensha_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C1579891BCA46A9D5062851 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70783FBDD3C4E6E692EAFD32 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jitensha_iOS/Pods-Jitensha_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22ECB4FA1D02CF2E009C1774 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22ECB5371D02E2AE009C1774 /* UserModel.swift in Sources */,
 				22ECB50A1D02CF2E009C1774 /* Jitensha_iOS.xcdatamodeld in Sources */,
-				22ECB5041D02CF2E009C1774 /* ViewController.swift in Sources */,
+				22ECB53C1D02E54F009C1774 /* UserService.swift in Sources */,
+				22ECB5401D02F735009C1774 /* RegisterViewController.swift in Sources */,
+				22ECB5421D02FA24009C1774 /* PlacesListViewController.swift in Sources */,
+				22ECB5461D02FB41009C1774 /* RentViewController.swift in Sources */,
+				22ECB5441D02FAD6009C1774 /* MapListViewController.swift in Sources */,
+				22ECB53A1D02E44F009C1774 /* AuthService.swift in Sources */,
+				22ECB53E1D02E66B009C1774 /* Constants.swift in Sources */,
+				22ECB5041D02CF2E009C1774 /* LoginViewController.swift in Sources */,
 				22ECB5021D02CF2E009C1774 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +548,7 @@
 		};
 		22ECB52A1D02CF2E009C1774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F066DA6B32D8A52E63160BCA /* Pods-Jitensha_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jitensha_iOS/Info.plist;
@@ -412,6 +560,7 @@
 		};
 		22ECB52B1D02CF2E009C1774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 334C28DFD49CC2CD5FB5DE8F /* Pods-Jitensha_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jitensha_iOS/Info.plist;
@@ -486,6 +635,7 @@
 				22ECB52B1D02CF2E009C1774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22ECB52C1D02CF2E009C1774 /* Build configuration list for PBXNativeTarget "Jitensha_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +644,7 @@
 				22ECB52E1D02CF2E009C1774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22ECB52F1D02CF2E009C1774 /* Build configuration list for PBXNativeTarget "Jitensha_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +653,7 @@
 				22ECB5311D02CF2E009C1774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
