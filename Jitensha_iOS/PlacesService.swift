@@ -59,7 +59,6 @@ public class PlacesService : NSObject {
         Alamofire.request(.GET, url, headers: headers)
             .responseJSON { response in
                 if let value: AnyObject = response.result.value {
-                    print(response.result);
                     //Handle the results as JSON
                     let get = JSON(value)
                      if get[Constants.resultsKeyString] != nil {

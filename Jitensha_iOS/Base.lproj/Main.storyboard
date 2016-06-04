@@ -189,11 +189,86 @@
                         <outlet property="mapMapView" destination="qJl-N1-VXu" id="zIK-fG-h5B"/>
                         <outlet property="nameLabel" destination="IZe-nN-oSO" id="kCR-ss-utp"/>
                         <segue destination="G5l-Xe-7QY" kind="show" identifier="ShowRentHistorySegue" id="N6m-eJ-cjC"/>
+                        <segue destination="xba-7u-XNc" kind="popoverPresentation" identifier="ShowRequestRentSegue" popoverAnchorView="aGt-I8-Plp" id="4qr-ai-uDn">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erf-yq-noq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1727" y="2055"/>
+        </scene>
+        <!--Rent Request View Controller-->
+        <scene sceneID="GWO-Fo-DYy">
+            <objects>
+                <viewController id="xba-7u-XNc" customClass="RentRequestViewController" customModule="Jitensha_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOb-6F-z0l"/>
+                        <viewControllerLayoutGuide type="bottom" id="QDI-zX-2bj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vqo-73-IHy">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2af-oG-opJ">
+                                <rect key="frame" x="55" y="111" width="249" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-y6-qL0">
+                                <rect key="frame" x="55" y="171" width="249" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="expiration" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dct-xU-xGZ">
+                                <rect key="frame" x="55" y="225" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DhD-jN-ADI">
+                                <rect key="frame" x="207" y="225" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekt-CT-Uqw">
+                                <rect key="frame" x="241" y="42" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.28193378448486328" green="0.6457134485244751" blue="0.63963723182678223" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Request">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestPressed:" destination="xba-7u-XNc" eventType="touchUpInside" id="cIY-0a-0mD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19c-UJ-5wd">
+                                <rect key="frame" x="55" y="42" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.28193378450000001" green="0.64571344850000001" blue="0.63963723179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="xba-7u-XNc" eventType="touchUpInside" id="aXf-Fk-baS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BMr-y6-qL0" firstAttribute="centerX" secondItem="vqo-73-IHy" secondAttribute="centerX" id="a0i-Mg-oXl"/>
+                            <constraint firstItem="2af-oG-opJ" firstAttribute="centerX" secondItem="vqo-73-IHy" secondAttribute="centerX" id="atw-Aw-Px5"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="300"/>
+                    <connections>
+                        <outlet property="codeTextField" destination="DhD-jN-ADI" id="4aL-FH-h0Z"/>
+                        <outlet property="expirationTextField" destination="dct-xU-xGZ" id="LjY-us-UZ8"/>
+                        <outlet property="nameTextField" destination="BMr-y6-qL0" id="PGj-a8-ykh"/>
+                        <outlet property="numberTextField" destination="2af-oG-opJ" id="Pr8-xn-0kk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3W-Uz-bEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2503" y="2055"/>
         </scene>
         <!--Rent History View Controller-->
         <scene sceneID="fT4-9n-VEb">
