@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2261BAA61D035AEB008CC3DE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2261BAA51D035AEB008CC3DE /* CoreLocation.framework */; };
 		2261BAA81D035B28008CC3DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2261BAA71D035B28008CC3DE /* MapKit.framework */; };
+		2261BAAA1D037FE3008CC3DE /* RentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2261BAA91D037FE3008CC3DE /* RentHistoryViewController.swift */; };
 		22ECB5021D02CF2E009C1774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5011D02CF2E009C1774 /* AppDelegate.swift */; };
 		22ECB5041D02CF2E009C1774 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECB5031D02CF2E009C1774 /* LoginViewController.swift */; };
 		22ECB5071D02CF2E009C1774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22ECB5051D02CF2E009C1774 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		1FC015006721AF270E57A47C /* Pods_Jitensha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jitensha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2261BAA51D035AEB008CC3DE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2261BAA71D035B28008CC3DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2261BAA91D037FE3008CC3DE /* RentHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentHistoryViewController.swift; sourceTree = "<group>"; };
 		22ECB4FE1D02CF2E009C1774 /* Jitensha_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jitensha_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22ECB5011D02CF2E009C1774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22ECB5031D02CF2E009C1774 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				22ECB5411D02FA24009C1774 /* PlacesListViewController.swift */,
 				22ECB5431D02FAD6009C1774 /* MapListViewController.swift */,
 				22ECB5451D02FB41009C1774 /* RentViewController.swift */,
+				2261BAA91D037FE3008CC3DE /* RentHistoryViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				22ECB54A1D03200D009C1774 /* PlaceModel.swift in Sources */,
 				22ECB5481D031A97009C1774 /* PlacesService.swift in Sources */,
 				22ECB5401D02F735009C1774 /* RegisterViewController.swift in Sources */,
+				2261BAAA1D037FE3008CC3DE /* RentHistoryViewController.swift in Sources */,
 				22ECB5421D02FA24009C1774 /* PlacesListViewController.swift in Sources */,
 				22ECB5461D02FB41009C1774 /* RentViewController.swift in Sources */,
 				22ECB5441D02FAD6009C1774 /* MapListViewController.swift in Sources */,
